@@ -1,0 +1,37 @@
+package net.enderboii829.firstmod.block.custom;
+
+import net.enderboii829.firstmod.item.ModItems;
+import net.minecraft.block.Block;
+import net.minecraft.block.BlockState;
+import net.minecraft.block.CropBlock;
+import net.minecraft.item.ItemConvertible;
+import net.minecraft.state.StateManager;
+import net.minecraft.state.property.IntProperty;
+
+public class CherryCropBlock extends CropBlock {
+    public static final IntProperty AGE = IntProperty.of("age", 0, 6);
+    public CherryCropBlock(Settings settings) {
+        super(settings);
+
+    }
+
+    @Override
+    protected ItemConvertible getSeedsItem() {
+        return ModItems.CHERRY_SEEDS;
+    }
+
+    @Override
+    public int getMaxAge() {
+        return 6;
+    }
+
+    @Override
+    public IntProperty getAgeProperty() {
+        return AGE;
+    }
+
+    @Override
+    protected void appendProperties(StateManager.Builder<Block, BlockState> builder) {
+        builder.add(AGE);
+    }
+}

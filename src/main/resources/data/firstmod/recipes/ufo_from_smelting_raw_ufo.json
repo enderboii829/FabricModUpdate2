@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "cookingtime": 100,
+  "experience": 0.35,
+  "group": "UFO",
+  "ingredient": {
+    "item": "firstmod:raw_ufo"
+  },
+  "result": "firstmod:ufo"
+}
