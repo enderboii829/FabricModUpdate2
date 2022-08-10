@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-  "firstmod:ufo_block"
+  "firstmod:ufo_block",
+  "firstmod:ufo_ore"
   ]
 }
