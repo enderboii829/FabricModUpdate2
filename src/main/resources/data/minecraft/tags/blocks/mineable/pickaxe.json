@@ -2,6 +2,8 @@
   "replace": false,
   "values": [
   "firstmod:ufo_block",
-  "firstmod:ufo_ore"
+  "firstmod:ufo_ore",
+    "firstmod:netherrack_tanzanite_ore",
+    "firstmod:endstone_tanzanite_ore"
   ]
 }

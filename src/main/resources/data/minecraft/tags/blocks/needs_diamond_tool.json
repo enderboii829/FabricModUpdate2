@@ -3,6 +3,8 @@
   "values": [
   "firstmod:ufo_block",
   "firstmod:ufo_ore",
-  "firstmod:cherry_crop"
+  "firstmod:cherry_crop",
+    "firstmod:netherrack_tanzanite_ore",
+    "firstmod:endstone_tanzanite_ore"
   ]
 }

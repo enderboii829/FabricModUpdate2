@@ -33,6 +33,13 @@ public static final Block UFO_BLOCK = registerBlock("ufo_block",
     public static final Block CHERRY_CROP = registerBlockWithoutItem("cherry_crop",
             new CherryCropBlock(FabricBlockSettings.copy(Blocks.WHEAT)));
 
+    public static final Block NETHERRACK_TANZANITE_ORE = registerBlock("netherrack_tanzanite_ore",
+            new OreBlock(FabricBlockSettings.of(Material.STONE).strength(4.0f).requiresTool(),
+                    UniformIntProvider.create(3, 7)), ModItemGroup.FABRIC_TAB);
+    public static final Block ENDSTONE_TANZANITE_ORE = registerBlock("endstone_tanzanite_ore",
+            new OreBlock(FabricBlockSettings.of(Material.STONE).strength(4.0f).requiresTool(),
+                    UniformIntProvider.create(3, 7)), ModItemGroup.FABRIC_TAB);
+
     private static Block registerBlockWithoutItem(String name, Block block) {
         return Registry.register(Registry.BLOCK, new Identifier(FirstMod.MOD_ID, name), block);
     }
