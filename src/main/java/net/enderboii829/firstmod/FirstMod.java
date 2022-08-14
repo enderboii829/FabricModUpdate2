@@ -3,6 +3,7 @@ package net.enderboii829.firstmod;
 import net.enderboii829.firstmod.block.ModBlocks;
 import net.enderboii829.firstmod.item.ModItems;
 import net.enderboii829.firstmod.painting.ModPaintings;
+import net.enderboii829.firstmod.util.ModLootTableModifiers;
 import net.enderboii829.firstmod.villager.ModVillagers;
 import net.enderboii829.firstmod.world.feautures.ModConfigedFeatures;
 import net.enderboii829.firstmod.world.gen.ModOreGeneration;
@@ -27,6 +28,8 @@ public class FirstMod implements ModInitializer {
 
 		ModPaintings.registerPaintings();
 		ModOreGeneration.generateOres();
+
+		ModLootTableModifiers.modifyLootTables();
 
 
 	}
